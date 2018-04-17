@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  payment_amount: 1.5
+  requester: one
+  payer: one
+  time_of_payment: 2018-04-15 02:39:23
+
+two:
+  payment_amount: 1.5
+  requester: two
+  payer: two
+  time_of_payment: 2018-04-15 02:39:23

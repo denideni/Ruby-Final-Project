@@ -1,0 +1,28 @@
+<% if logged_in? %>
+  
+  
+  <% else %>
+   
+  <div class="row">
+    <div class="col-lg-6 offset-lg-3">
+      <h1>Welcome to Vemo!  Make payments to all your friends!</h1>
+      <p>Sign up or log in to get started!</p>
+    </div>
+  </div>
+
+<% end %>
+
+   <br>
+  <div class="row">
+    <div class="col-lg-6 offset-lg-3">
+      <h1> All Payments:</h1>
+      <% if @payments.blank? %>
+        <p class="text-center">There aren't any payments yet, you should make one!</p>
+      <% else %>
+        <% @payments.order(created_at: :desc).each do |payment| %>
+          <%= render 'payments/payment', payment: payment %>
+          <br>
+        <% end %>
+      <% end %>
+    </div>
+  </div>

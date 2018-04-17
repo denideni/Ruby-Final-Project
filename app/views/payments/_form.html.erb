@@ -1,0 +1,40 @@
+
+<h1>Make a Payment! </h1>
+
+<%= form_with(model: payment, local: true) do |form| %>
+  <% if payment.errors.any? %>
+  mmwmwmw
+    <div id="error_explanation">
+      <h2><%= pluralize(payment.errors.count, "error") %> prohibited this status from being saved:</h2>
+      <ul>
+      <% payment.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+
+<div class="field form-group">
+    <%= form.label :recipient %>
+     <%= form.collection_select :requester_id, (current_user.selected_users), :id, :full_name %>
+  </div>
+
+   <div class="field form-group">
+    <%= form.label :payment_amount %>:
+    <%= form.number_field :payment_amount, id: :user_first_name, class: 'form-control' %>
+  </div>
+
+  <%= form.hidden_field :payer_id, value: current_user.id %> 
+
+ <div class="field form-group">
+  <%= form.text_area :reason_for_payment, rows: 3, class: 'form-control', placeholder: "Reason for Payment ?", id: :reason_for_payment %>
+ </div>
+
+
+
+
+  <div class="actions">
+    <%= form.submit class: 'btn btn-sm btn-primary float-right' %>
+  </div>
+<% end %>

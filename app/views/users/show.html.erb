@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<div class="row">
+  <div class="col-lg-6 offset-lg-3">
+<h1>
+    <%= @user.full_name %>
+  </h1>
+</div>
+  </div>
+
+
+<div class="row">
+    <div class="col-lg-6 offset-lg-3">
+      <%= render 'payments/form', payment: @payment %>
+    </div>
+  </div>
+
+<div class="row">
+  
+
+  <div class="col-lg-8 order-1 order-lg-2">
+
+   
+    <h2>Payments: </h2>
+    <% if @user.payments.empty? %>
+      <p class="text-center"><%= @user.full_name %> doesn't have any payments yet.</p>
+    <% else %>
+      <% @user.payments.order(created_at: :desc).each do |status| %>
+        <%= render 'payments/payment', payment: status %>
+        <br>
+      <% end %>
+    <% end %>
+  </div>
+</div>
