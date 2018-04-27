@@ -10909,3 +10909,988 @@ Processing by WelcomeController#index as HTML
 Completed 200 OK in 67ms (Views: 62.4ms | ActiveRecord: 1.5ms)
 
 
+Started GET "/" for 127.0.0.1 at 2018-04-26 19:48:09 -0400
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/denizkecik/.rvm/gems/ruby-2.5.1/gems/web-console-3.6.0/lib/web_console/middleware.rb:137
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mPayment Load (0.5ms)[0m  [1m[34mSELECT "payments".* FROM "payments"[0m
+  ↳ app/views/welcome/index.html.erb:19
+  [1m[36mPayment Load (0.2ms)[0m  [1m[34mSELECT "payments".* FROM "payments" ORDER BY "payments"."created_at" DESC[0m
+  ↳ app/views/welcome/index.html.erb:22
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/payments/_payment.html.erb:4
+  Rendered payments/_payment.html.erb (41.1ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/payments/_payment.html.erb:4
+  Rendered payments/_payment.html.erb (1.2ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/payments/_payment.html.erb:4
+  Rendered payments/_payment.html.erb (0.7ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/payments/_payment.html.erb:4
+  Rendered payments/_payment.html.erb (0.6ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/payments/_payment.html.erb:4
+  Rendered payments/_payment.html.erb (0.7ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/payments/_payment.html.erb:4
+  Rendered payments/_payment.html.erb (2.0ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/payments/_payment.html.erb:4
+  Rendered payments/_payment.html.erb (1.5ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/payments/_payment.html.erb:4
+  Rendered payments/_payment.html.erb (1.1ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/payments/_payment.html.erb:4
+  Rendered payments/_payment.html.erb (1.2ms)
+  Rendered welcome/index.html.erb within layouts/application (93.1ms)
+  Rendered layouts/_nav.html.erb (1.6ms)
+Completed 200 OK in 497ms (Views: 470.5ms | ActiveRecord: 5.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-26 19:48:16 -0400
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mPayment Load (0.4ms)[0m  [1m[34mSELECT "payments".* FROM "payments"[0m
+  ↳ app/views/welcome/index.html.erb:19
+  [1m[36mPayment Load (0.3ms)[0m  [1m[34mSELECT "payments".* FROM "payments" ORDER BY "payments"."created_at" DESC[0m
+  ↳ app/views/welcome/index.html.erb:22
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/payments/_payment.html.erb:4
+  Rendered payments/_payment.html.erb (1.4ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/payments/_payment.html.erb:4
+  Rendered payments/_payment.html.erb (1.1ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/payments/_payment.html.erb:4
+  Rendered payments/_payment.html.erb (1.0ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/payments/_payment.html.erb:4
+  Rendered payments/_payment.html.erb (1.1ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/payments/_payment.html.erb:4
+  Rendered payments/_payment.html.erb (0.8ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/payments/_payment.html.erb:4
+  Rendered payments/_payment.html.erb (0.7ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/payments/_payment.html.erb:4
+  Rendered payments/_payment.html.erb (1.0ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/payments/_payment.html.erb:4
+  Rendered payments/_payment.html.erb (0.7ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/payments/_payment.html.erb:4
+  Rendered payments/_payment.html.erb (1.0ms)
+  Rendered welcome/index.html.erb within layouts/application (30.8ms)
+  Rendered layouts/_nav.html.erb (1.0ms)
+Completed 200 OK in 74ms (Views: 69.0ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2018-04-26 19:48:19 -0400
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (14.2ms)
+  Rendered users/new.html.erb within layouts/application (17.6ms)
+  Rendered layouts/_nav.html.erb (1.0ms)
+Completed 200 OK in 81ms (Views: 75.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2018-04-26 19:48:40 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"i0+c7kL5dYnCIY5bXQVhY4ZM27NgXkrnrVvZ/+NYSyQEFelBlyPcJZZaSW4EGLC4FZuMZItWs+ZRNKp0heDSCQ==", "user"=>{"first_name"=>"Deniz", "last_name"=>"Kecik", "email"=>"deniz@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Create User"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:24
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "deniz@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:24
+  [1m[36mUser Create (0.7ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "password_hash", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["first_name", "Deniz"], ["last_name", "Kecik"], ["email", "deniz@gmail.com"], ["password_hash", "$2a$10$EvhvgT592pzpO3lNXwgBQOGly7L2Qc8L66DA2k31QIOtDEcHXeMbO"], ["created_at", "2018-04-26 23:48:40.197222"], ["updated_at", "2018-04-26 23:48:40.197222"]]
+  ↳ app/controllers/users_controller.rb:24
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:24
+Redirected to http://localhost:3000/users/49
+Completed 302 Found in 64ms (ActiveRecord: 2.9ms)
+
+
+Started GET "/users/49" for 127.0.0.1 at 2018-04-26 19:48:40 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"49"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 49], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:68
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 49], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" != ?[0m  [["id", 49]]
+  ↳ app/views/payments/_form.html.erb:20
+  Rendered payments/_form.html.erb (7.3ms)
+  [1m[36mPayment Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "payments" WHERE "payments"."payer_id" = ? LIMIT ?[0m  [["payer_id", 49], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:25
+  Rendered users/show.html.erb within layouts/application (22.5ms)
+  Rendered layouts/_nav.html.erb (0.8ms)
+Completed 200 OK in 79ms (Views: 74.2ms | ActiveRecord: 1.3ms)
+
+
+Started POST "/payments" for 127.0.0.1 at 2018-04-26 19:49:03 -0400
+Processing by PaymentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7IFrA7nqIUL1ldV5vgs7lBRBmCPzgQnSgyGH9oCJS1BvEhbLjd/f6f1kAVozr+exZ6ASMB0Iy465JrjMZiVUmQ==", "payment"=>{"requester_id"=>"1", "payment_amount"=>"100", "payer_id"=>"49", "reason_for_payment"=>"isot"}, "commit"=>"Create Payment"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 49], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/payments_controller.rb:16
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/payments_controller.rb:16
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 49], ["LIMIT", 1]]
+  ↳ app/controllers/payments_controller.rb:16
+  [1m[36mPayment Create (0.6ms)[0m  [1m[32mINSERT INTO "payments" ("payment_amount", "requester_id", "payer_id", "reason_for_payment", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["payment_amount", 100.0], ["requester_id", 1], ["payer_id", 49], ["reason_for_payment", "isot"], ["created_at", "2018-04-26 23:49:03.609208"], ["updated_at", "2018-04-26 23:49:03.609208"]]
+  ↳ app/controllers/payments_controller.rb:16
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/payments_controller.rb:16
+Redirected to http://localhost:3000/users/49
+Completed 302 Found in 13ms (ActiveRecord: 2.8ms)
+
+
+Started GET "/users/49" for 127.0.0.1 at 2018-04-26 19:49:03 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"49"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 49], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:68
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 49], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" != ?[0m  [["id", 49]]
+  ↳ app/views/payments/_form.html.erb:20
+  Rendered payments/_form.html.erb (4.7ms)
+  [1m[36mPayment Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "payments" WHERE "payments"."payer_id" = ? LIMIT ?[0m  [["payer_id", 49], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:25
+  [1m[36mPayment Load (0.2ms)[0m  [1m[34mSELECT "payments".* FROM "payments" WHERE "payments"."payer_id" = ? ORDER BY "payments"."created_at" DESC[0m  [["payer_id", 49]]
+  ↳ app/views/users/show.html.erb:28
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/payments/_payment.html.erb:4
+  Rendered payments/_payment.html.erb (1.9ms)
+  Rendered users/show.html.erb within layouts/application (15.7ms)
+  Rendered layouts/_nav.html.erb (1.3ms)
+Completed 200 OK in 59ms (Views: 54.5ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-04-26 19:49:11 -0400
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:7
+  Rendered users/index.html.erb within layouts/application (2.5ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 49], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  Rendered layouts/_nav.html.erb (1.3ms)
+Completed 200 OK in 51ms (Views: 44.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/6" for 127.0.0.1 at 2018-04-26 19:49:13 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:68
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 49], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" != ?[0m  [["id", 49]]
+  ↳ app/views/payments/_form.html.erb:20
+  Rendered payments/_form.html.erb (4.8ms)
+  [1m[36mPayment Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "payments" WHERE "payments"."payer_id" = ? LIMIT ?[0m  [["payer_id", 6], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:25
+  [1m[36mPayment Load (0.2ms)[0m  [1m[34mSELECT "payments".* FROM "payments" WHERE "payments"."payer_id" = ? ORDER BY "payments"."created_at" DESC[0m  [["payer_id", 6]]
+  ↳ app/views/users/show.html.erb:28
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/payments/_payment.html.erb:4
+  Rendered payments/_payment.html.erb (1.7ms)
+  Rendered users/show.html.erb within layouts/application (14.5ms)
+  Rendered layouts/_nav.html.erb (1.1ms)
+Completed 200 OK in 72ms (Views: 63.7ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/payments" for 127.0.0.1 at 2018-04-26 19:49:41 -0400
+Processing by PaymentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"NgSFJmMbGMMWKMqU3kckZxRBAHf1WsVOOSm518Yf58MqDW9YWT6ZQtsRnBPb1gvzFH6CtcNt7wq11GFddC67iA==", "payment"=>{"requester_id"=>"6", "payment_amount"=>"10", "payer_id"=>"49", "reason_for_payment"=>"Brunch"}, "commit"=>"Create Payment"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 49], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/payments_controller.rb:16
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/payments_controller.rb:16
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 49], ["LIMIT", 1]]
+  ↳ app/controllers/payments_controller.rb:16
+  [1m[36mPayment Create (0.9ms)[0m  [1m[32mINSERT INTO "payments" ("payment_amount", "requester_id", "payer_id", "reason_for_payment", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["payment_amount", 10.0], ["requester_id", 6], ["payer_id", 49], ["reason_for_payment", "Brunch"], ["created_at", "2018-04-26 23:49:41.751442"], ["updated_at", "2018-04-26 23:49:41.751442"]]
+  ↳ app/controllers/payments_controller.rb:16
+  [1m[35m (2.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/payments_controller.rb:16
+Redirected to http://localhost:3000/users/49
+Completed 302 Found in 12ms (ActiveRecord: 3.6ms)
+
+
+Started GET "/users/49" for 127.0.0.1 at 2018-04-26 19:49:41 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"49"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 49], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:68
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 49], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" != ?[0m  [["id", 49]]
+  ↳ app/views/payments/_form.html.erb:20
+  Rendered payments/_form.html.erb (3.3ms)
+  [1m[36mPayment Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "payments" WHERE "payments"."payer_id" = ? LIMIT ?[0m  [["payer_id", 49], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:25
+  [1m[36mPayment Load (0.2ms)[0m  [1m[34mSELECT "payments".* FROM "payments" WHERE "payments"."payer_id" = ? ORDER BY "payments"."created_at" DESC[0m  [["payer_id", 49]]
+  ↳ app/views/users/show.html.erb:28
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/payments/_payment.html.erb:4
+  Rendered payments/_payment.html.erb (1.1ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/payments/_payment.html.erb:4
+  Rendered payments/_payment.html.erb (1.1ms)
+  Rendered users/show.html.erb within layouts/application (12.9ms)
+  Rendered layouts/_nav.html.erb (0.9ms)
+Completed 200 OK in 54ms (Views: 50.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-04-26 19:55:27 -0400
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:7
+  Rendered users/index.html.erb within layouts/application (2.5ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 49], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  Rendered layouts/_nav.html.erb (2.1ms)
+Completed 200 OK in 51ms (Views: 47.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/6" for 127.0.0.1 at 2018-04-26 19:55:29 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:68
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 49], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" != ?[0m  [["id", 49]]
+  ↳ app/views/payments/_form.html.erb:20
+  Rendered payments/_form.html.erb (11.5ms)
+  [1m[36mPayment Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "payments" WHERE "payments"."payer_id" = ? LIMIT ?[0m  [["payer_id", 6], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:25
+  [1m[36mPayment Load (0.3ms)[0m  [1m[34mSELECT "payments".* FROM "payments" WHERE "payments"."payer_id" = ? ORDER BY "payments"."created_at" DESC[0m  [["payer_id", 6]]
+  ↳ app/views/users/show.html.erb:28
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/payments/_payment.html.erb:4
+  Rendered payments/_payment.html.erb (1.6ms)
+  Rendered users/show.html.erb within layouts/application (21.0ms)
+  Rendered layouts/_nav.html.erb (0.6ms)
+Completed 200 OK in 66ms (Views: 60.8ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/users/49" for 127.0.0.1 at 2018-04-26 19:55:43 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"49"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 49], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:68
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 49], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" != ?[0m  [["id", 49]]
+  ↳ app/views/payments/_form.html.erb:20
+  Rendered payments/_form.html.erb (5.9ms)
+  [1m[36mPayment Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "payments" WHERE "payments"."payer_id" = ? LIMIT ?[0m  [["payer_id", 49], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:25
+  [1m[36mPayment Load (0.2ms)[0m  [1m[34mSELECT "payments".* FROM "payments" WHERE "payments"."payer_id" = ? ORDER BY "payments"."created_at" DESC[0m  [["payer_id", 49]]
+  ↳ app/views/users/show.html.erb:28
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/payments/_payment.html.erb:4
+  Rendered payments/_payment.html.erb (1.8ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/payments/_payment.html.erb:4
+  Rendered payments/_payment.html.erb (1.3ms)
+  Rendered users/show.html.erb within layouts/application (20.7ms)
+  Rendered layouts/_nav.html.erb (0.7ms)
+Completed 200 OK in 73ms (Views: 66.0ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-04-26 19:55:45 -0400
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:7
+  Rendered users/index.html.erb within layouts/application (2.5ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 49], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  Rendered layouts/_nav.html.erb (1.4ms)
+Completed 200 OK in 61ms (Views: 54.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-04-26 19:55:48 -0400
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:7
+  Rendered users/index.html.erb within layouts/application (8.6ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 49], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  Rendered layouts/_nav.html.erb (1.2ms)
+Completed 200 OK in 56ms (Views: 49.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/49" for 127.0.0.1 at 2018-04-26 19:55:49 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"49"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 49], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:68
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 49], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" != ?[0m  [["id", 49]]
+  ↳ app/views/payments/_form.html.erb:20
+  Rendered payments/_form.html.erb (8.1ms)
+  [1m[36mPayment Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "payments" WHERE "payments"."payer_id" = ? LIMIT ?[0m  [["payer_id", 49], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:25
+  [1m[36mPayment Load (0.3ms)[0m  [1m[34mSELECT "payments".* FROM "payments" WHERE "payments"."payer_id" = ? ORDER BY "payments"."created_at" DESC[0m  [["payer_id", 49]]
+  ↳ app/views/users/show.html.erb:28
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/payments/_payment.html.erb:4
+  Rendered payments/_payment.html.erb (1.4ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/payments/_payment.html.erb:4
+  Rendered payments/_payment.html.erb (1.1ms)
+  Rendered users/show.html.erb within layouts/application (21.5ms)
+  Rendered layouts/_nav.html.erb (0.6ms)
+Completed 200 OK in 71ms (Views: 64.7ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/users/49" for 127.0.0.1 at 2018-04-26 19:55:50 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"49"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 49], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:68
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 49], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" != ?[0m  [["id", 49]]
+  ↳ app/views/payments/_form.html.erb:20
+  Rendered payments/_form.html.erb (6.2ms)
+  [1m[36mPayment Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "payments" WHERE "payments"."payer_id" = ? LIMIT ?[0m  [["payer_id", 49], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:25
+  [1m[36mPayment Load (0.2ms)[0m  [1m[34mSELECT "payments".* FROM "payments" WHERE "payments"."payer_id" = ? ORDER BY "payments"."created_at" DESC[0m  [["payer_id", 49]]
+  ↳ app/views/users/show.html.erb:28
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/payments/_payment.html.erb:4
+  Rendered payments/_payment.html.erb (1.6ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/payments/_payment.html.erb:4
+  Rendered payments/_payment.html.erb (0.8ms)
+  Rendered users/show.html.erb within layouts/application (19.5ms)
+  Rendered layouts/_nav.html.erb (0.9ms)
+Completed 200 OK in 72ms (Views: 64.0ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-04-26 19:55:51 -0400
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:7
+  Rendered users/index.html.erb within layouts/application (2.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 49], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  Rendered layouts/_nav.html.erb (1.4ms)
+Completed 200 OK in 55ms (Views: 49.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/49" for 127.0.0.1 at 2018-04-26 19:55:52 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"49"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 49], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:68
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 49], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" != ?[0m  [["id", 49]]
+  ↳ app/views/payments/_form.html.erb:20
+  Rendered payments/_form.html.erb (7.1ms)
+  [1m[36mPayment Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "payments" WHERE "payments"."payer_id" = ? LIMIT ?[0m  [["payer_id", 49], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:25
+  [1m[36mPayment Load (0.2ms)[0m  [1m[34mSELECT "payments".* FROM "payments" WHERE "payments"."payer_id" = ? ORDER BY "payments"."created_at" DESC[0m  [["payer_id", 49]]
+  ↳ app/views/users/show.html.erb:28
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/payments/_payment.html.erb:4
+  Rendered payments/_payment.html.erb (1.6ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/payments/_payment.html.erb:4
+  Rendered payments/_payment.html.erb (0.8ms)
+  Rendered users/show.html.erb within layouts/application (23.1ms)
+  Rendered layouts/_nav.html.erb (0.6ms)
+Completed 200 OK in 73ms (Views: 66.0ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-04-26 19:55:59 -0400
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:7
+  Rendered users/index.html.erb within layouts/application (2.9ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 49], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  Rendered layouts/_nav.html.erb (1.8ms)
+Completed 200 OK in 63ms (Views: 57.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2018-04-26 19:56:02 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:68
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 49], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" != ?[0m  [["id", 49]]
+  ↳ app/views/payments/_form.html.erb:20
+  Rendered payments/_form.html.erb (5.0ms)
+  [1m[36mPayment Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "payments" WHERE "payments"."payer_id" = ? LIMIT ?[0m  [["payer_id", 1], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:25
+  [1m[36mPayment Load (0.2ms)[0m  [1m[34mSELECT "payments".* FROM "payments" WHERE "payments"."payer_id" = ? ORDER BY "payments"."created_at" DESC[0m  [["payer_id", 1]]
+  ↳ app/views/users/show.html.erb:28
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/payments/_payment.html.erb:4
+  Rendered payments/_payment.html.erb (1.7ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/payments/_payment.html.erb:4
+  Rendered payments/_payment.html.erb (0.8ms)
+  Rendered users/show.html.erb within layouts/application (19.2ms)
+  Rendered layouts/_nav.html.erb (0.7ms)
+Completed 200 OK in 68ms (Views: 61.3ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-26 19:56:10 -0400
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mPayment Load (0.3ms)[0m  [1m[34mSELECT "payments".* FROM "payments"[0m
+  ↳ app/views/welcome/index.html.erb:19
+  [1m[36mPayment Load (0.3ms)[0m  [1m[34mSELECT "payments".* FROM "payments" ORDER BY "payments"."created_at" DESC[0m
+  ↳ app/views/welcome/index.html.erb:22
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/payments/_payment.html.erb:4
+  Rendered payments/_payment.html.erb (2.2ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/payments/_payment.html.erb:4
+  Rendered payments/_payment.html.erb (1.2ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/payments/_payment.html.erb:4
+  Rendered payments/_payment.html.erb (1.0ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/payments/_payment.html.erb:4
+  Rendered payments/_payment.html.erb (0.8ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/payments/_payment.html.erb:4
+  Rendered payments/_payment.html.erb (0.8ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/payments/_payment.html.erb:4
+  Rendered payments/_payment.html.erb (1.3ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/payments/_payment.html.erb:4
+  Rendered payments/_payment.html.erb (0.9ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/payments/_payment.html.erb:4
+  Rendered payments/_payment.html.erb (0.8ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/payments/_payment.html.erb:4
+  Rendered payments/_payment.html.erb (0.8ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/payments/_payment.html.erb:4
+  Rendered payments/_payment.html.erb (0.6ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/payments/_payment.html.erb:4
+  Rendered payments/_payment.html.erb (0.5ms)
+  Rendered welcome/index.html.erb within layouts/application (36.9ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 49], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  Rendered layouts/_nav.html.erb (1.5ms)
+Completed 200 OK in 77ms (Views: 70.0ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/users/49" for 127.0.0.1 at 2018-04-26 19:56:23 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"49"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 49], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:68
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 49], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" != ?[0m  [["id", 49]]
+  ↳ app/views/payments/_form.html.erb:20
+  Rendered payments/_form.html.erb (7.1ms)
+  [1m[36mPayment Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "payments" WHERE "payments"."payer_id" = ? LIMIT ?[0m  [["payer_id", 49], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:25
+  [1m[36mPayment Load (0.2ms)[0m  [1m[34mSELECT "payments".* FROM "payments" WHERE "payments"."payer_id" = ? ORDER BY "payments"."created_at" DESC[0m  [["payer_id", 49]]
+  ↳ app/views/users/show.html.erb:28
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/payments/_payment.html.erb:4
+  Rendered payments/_payment.html.erb (1.8ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/payments/_payment.html.erb:4
+  Rendered payments/_payment.html.erb (0.9ms)
+  Rendered users/show.html.erb within layouts/application (22.0ms)
+  Rendered layouts/_nav.html.erb (0.7ms)
+Completed 200 OK in 80ms (Views: 73.4ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-26 19:56:35 -0400
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mPayment Load (0.2ms)[0m  [1m[34mSELECT "payments".* FROM "payments"[0m
+  ↳ app/views/welcome/index.html.erb:19
+  [1m[36mPayment Load (1.1ms)[0m  [1m[34mSELECT "payments".* FROM "payments" ORDER BY "payments"."created_at" DESC[0m
+  ↳ app/views/welcome/index.html.erb:22
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/payments/_payment.html.erb:4
+  Rendered payments/_payment.html.erb (3.6ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/payments/_payment.html.erb:4
+  Rendered payments/_payment.html.erb (1.6ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/payments/_payment.html.erb:4
+  Rendered payments/_payment.html.erb (1.2ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/payments/_payment.html.erb:4
+  Rendered payments/_payment.html.erb (1.2ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/payments/_payment.html.erb:4
+  Rendered payments/_payment.html.erb (1.4ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/payments/_payment.html.erb:4
+  Rendered payments/_payment.html.erb (1.2ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/payments/_payment.html.erb:4
+  Rendered payments/_payment.html.erb (0.7ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/payments/_payment.html.erb:4
+  Rendered payments/_payment.html.erb (1.1ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/payments/_payment.html.erb:4
+  Rendered payments/_payment.html.erb (0.8ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/payments/_payment.html.erb:4
+  Rendered payments/_payment.html.erb (0.9ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/payments/_payment.html.erb:4
+  Rendered payments/_payment.html.erb (0.6ms)
+  Rendered welcome/index.html.erb within layouts/application (51.6ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 49], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  Rendered layouts/_nav.html.erb (1.2ms)
+Completed 200 OK in 97ms (Views: 89.9ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/users/49" for 127.0.0.1 at 2018-04-26 19:58:18 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"49"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 49], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:68
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 49], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" != ?[0m  [["id", 49]]
+  ↳ app/views/payments/_form.html.erb:20
+  Rendered payments/_form.html.erb (5.4ms)
+  [1m[36mPayment Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "payments" WHERE "payments"."payer_id" = ? LIMIT ?[0m  [["payer_id", 49], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:25
+  [1m[36mPayment Load (0.2ms)[0m  [1m[34mSELECT "payments".* FROM "payments" WHERE "payments"."payer_id" = ? ORDER BY "payments"."created_at" DESC[0m  [["payer_id", 49]]
+  ↳ app/views/users/show.html.erb:28
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/payments/_payment.html.erb:4
+  Rendered payments/_payment.html.erb (2.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/payments/_payment.html.erb:4
+  Rendered payments/_payment.html.erb (0.9ms)
+  Rendered users/show.html.erb within layouts/application (19.8ms)
+  Rendered layouts/_nav.html.erb (0.6ms)
+Completed 200 OK in 69ms (Views: 61.5ms | ActiveRecord: 1.5ms)
+
+
+Started DELETE "/logout" for 127.0.0.1 at 2018-04-26 19:58:51 -0400
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"OdHq3RWYjAav5iaOm2Q6yXvqFJKlcRKLLp2ZZXoSYO66QpcVIa1yracX8q0WwObsCAuegUv40NcUmqZfnL5/Jw=="}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-26 19:58:51 -0400
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mPayment Load (0.2ms)[0m  [1m[34mSELECT "payments".* FROM "payments"[0m
+  ↳ app/views/welcome/index.html.erb:19
+  [1m[36mPayment Load (0.2ms)[0m  [1m[34mSELECT "payments".* FROM "payments" ORDER BY "payments"."created_at" DESC[0m
+  ↳ app/views/welcome/index.html.erb:22
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/payments/_payment.html.erb:4
+  Rendered payments/_payment.html.erb (5.6ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/payments/_payment.html.erb:4
+  Rendered payments/_payment.html.erb (0.8ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/payments/_payment.html.erb:4
+  Rendered payments/_payment.html.erb (0.6ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/payments/_payment.html.erb:4
+  Rendered payments/_payment.html.erb (0.9ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/payments/_payment.html.erb:4
+  Rendered payments/_payment.html.erb (0.7ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/payments/_payment.html.erb:4
+  Rendered payments/_payment.html.erb (0.7ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/payments/_payment.html.erb:4
+  Rendered payments/_payment.html.erb (0.7ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/payments/_payment.html.erb:4
+  Rendered payments/_payment.html.erb (0.7ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/payments/_payment.html.erb:4
+  Rendered payments/_payment.html.erb (0.5ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/payments/_payment.html.erb:4
+  Rendered payments/_payment.html.erb (0.6ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/payments/_payment.html.erb:4
+  Rendered payments/_payment.html.erb (0.7ms)
+  Rendered welcome/index.html.erb within layouts/application (35.1ms)
+  Rendered layouts/_nav.html.erb (0.5ms)
+Completed 200 OK in 69ms (Views: 66.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2018-04-26 19:58:54 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.5ms)
+  Rendered layouts/_nav.html.erb (0.5ms)
+Completed 200 OK in 47ms (Views: 42.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2018-04-26 19:59:05 -0400
+Processing by SessionsController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"OxynR5TDiwlgIOKPgA2yGdN2ib4KBwrt1zU6YCEUYq+EO6JHyAXJfE2INrfcw1vVXba3cFcUZqLIrwIlw01+tg==", "email"=>"lol@penn.edu", "password"=>"[FILTERED]", "button"=>""}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "lol@penn.edu"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:6
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+Redirected to http://localhost:3000/users/4
+Completed 200 OK in 56ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/users/4" for 127.0.0.1 at 2018-04-26 19:59:05 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:68
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" != ?[0m  [["id", 4]]
+  ↳ app/views/payments/_form.html.erb:20
+  Rendered payments/_form.html.erb (4.4ms)
+  [1m[36mPayment Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "payments" WHERE "payments"."payer_id" = ? LIMIT ?[0m  [["payer_id", 4], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:25
+  [1m[36mPayment Load (0.2ms)[0m  [1m[34mSELECT "payments".* FROM "payments" WHERE "payments"."payer_id" = ? ORDER BY "payments"."created_at" DESC[0m  [["payer_id", 4]]
+  ↳ app/views/users/show.html.erb:28
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/payments/_payment.html.erb:4
+  Rendered payments/_payment.html.erb (1.4ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/payments/_payment.html.erb:4
+  Rendered payments/_payment.html.erb (1.2ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/payments/_payment.html.erb:4
+  Rendered payments/_payment.html.erb (0.7ms)
+  Rendered users/show.html.erb within layouts/application (19.2ms)
+  Rendered layouts/_nav.html.erb (0.7ms)
+Completed 200 OK in 64ms (Views: 59.4ms | ActiveRecord: 1.2ms)
+
+
+Started POST "/payments" for 127.0.0.1 at 2018-04-26 19:59:44 -0400
+Processing by PaymentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"csUcgKyj4Q/0I9AGpgNVzQNuYO1rd5zfatFeEVB/I1h5IFsi6V0GRZbVy06XvpK4mPmQ9aLNKMxyqtWfTdMHjw==", "payment"=>{"requester_id"=>"49", "payment_amount"=>"30", "payer_id"=>"4", "reason_for_payment"=>"Frogro"}, "commit"=>"Create Payment"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/payments_controller.rb:16
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 49], ["LIMIT", 1]]
+  ↳ app/controllers/payments_controller.rb:16
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/payments_controller.rb:16
+  [1m[36mPayment Create (0.7ms)[0m  [1m[32mINSERT INTO "payments" ("payment_amount", "requester_id", "payer_id", "reason_for_payment", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["payment_amount", 30.0], ["requester_id", 49], ["payer_id", 4], ["reason_for_payment", "Frogro"], ["created_at", "2018-04-26 23:59:44.397650"], ["updated_at", "2018-04-26 23:59:44.397650"]]
+  ↳ app/controllers/payments_controller.rb:16
+  [1m[35m (2.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/payments_controller.rb:16
+Redirected to http://localhost:3000/users/4
+Completed 302 Found in 12ms (ActiveRecord: 3.7ms)
+
+
+Started GET "/users/4" for 127.0.0.1 at 2018-04-26 19:59:44 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:68
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" != ?[0m  [["id", 4]]
+  ↳ app/views/payments/_form.html.erb:20
+  Rendered payments/_form.html.erb (3.4ms)
+  [1m[36mPayment Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "payments" WHERE "payments"."payer_id" = ? LIMIT ?[0m  [["payer_id", 4], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:25
+  [1m[36mPayment Load (0.1ms)[0m  [1m[34mSELECT "payments".* FROM "payments" WHERE "payments"."payer_id" = ? ORDER BY "payments"."created_at" DESC[0m  [["payer_id", 4]]
+  ↳ app/views/users/show.html.erb:28
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 49], ["LIMIT", 1]]
+  ↳ app/views/payments/_payment.html.erb:4
+  Rendered payments/_payment.html.erb (1.1ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/payments/_payment.html.erb:4
+  Rendered payments/_payment.html.erb (0.7ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/payments/_payment.html.erb:4
+  Rendered payments/_payment.html.erb (1.5ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/payments/_payment.html.erb:4
+  Rendered payments/_payment.html.erb (0.8ms)
+  Rendered users/show.html.erb within layouts/application (19.8ms)
+  Rendered layouts/_nav.html.erb (1.0ms)
+Completed 200 OK in 61ms (Views: 56.2ms | ActiveRecord: 1.0ms)
+
+
+Started DELETE "/logout" for 127.0.0.1 at 2018-04-26 19:59:51 -0400
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"d9XusNBEFtSwDTka9Xmfv+g7ARToMkAErb9+OObN5yasZ47NgTCX0BVJpFYR9AOLP8dLKr+5pWnrjeZK/SSyxQ=="}
+Redirected to http://localhost:3000/
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-26 19:59:51 -0400
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mPayment Load (0.2ms)[0m  [1m[34mSELECT "payments".* FROM "payments"[0m
+  ↳ app/views/welcome/index.html.erb:19
+  [1m[36mPayment Load (0.2ms)[0m  [1m[34mSELECT "payments".* FROM "payments" ORDER BY "payments"."created_at" DESC[0m
+  ↳ app/views/welcome/index.html.erb:22
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 49], ["LIMIT", 1]]
+  ↳ app/views/payments/_payment.html.erb:4
+  Rendered payments/_payment.html.erb (1.1ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/payments/_payment.html.erb:4
+  Rendered payments/_payment.html.erb (0.7ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/payments/_payment.html.erb:4
+  Rendered payments/_payment.html.erb (1.0ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/payments/_payment.html.erb:4
+  Rendered payments/_payment.html.erb (1.0ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/payments/_payment.html.erb:4
+  Rendered payments/_payment.html.erb (1.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/payments/_payment.html.erb:4
+  Rendered payments/_payment.html.erb (0.7ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/payments/_payment.html.erb:4
+  Rendered payments/_payment.html.erb (0.8ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/payments/_payment.html.erb:4
+  Rendered payments/_payment.html.erb (1.0ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/payments/_payment.html.erb:4
+  Rendered payments/_payment.html.erb (0.7ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/payments/_payment.html.erb:4
+  Rendered payments/_payment.html.erb (1.0ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/payments/_payment.html.erb:4
+  Rendered payments/_payment.html.erb (0.9ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/payments/_payment.html.erb:4
+  Rendered payments/_payment.html.erb (0.7ms)
+  Rendered welcome/index.html.erb within layouts/application (34.5ms)
+  Rendered layouts/_nav.html.erb (0.6ms)
+Completed 200 OK in 77ms (Views: 73.4ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2018-04-26 19:59:52 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_nav.html.erb (0.9ms)
+Completed 200 OK in 49ms (Views: 46.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2018-04-26 20:00:12 -0400
+Processing by SessionsController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"fS0YxUdoVHi+skQjoC6n8hN0/L+6QmWslt+FhfelC51PGKfGSnOX5n8cvLkgJi4E3Bz55fcRfv+ZmK5+TfTKGA==", "email"=>"deniz@gmail.com", "password"=>"[FILTERED]", "button"=>""}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "deniz@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:6
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 49], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+Redirected to http://localhost:3000/users/49
+Completed 200 OK in 55ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/users/49" for 127.0.0.1 at 2018-04-26 20:00:12 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"49"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 49], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:68
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 49], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" != ?[0m  [["id", 49]]
+  ↳ app/views/payments/_form.html.erb:20
+  Rendered payments/_form.html.erb (5.3ms)
+  [1m[36mPayment Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "payments" WHERE "payments"."payer_id" = ? LIMIT ?[0m  [["payer_id", 49], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:25
+  [1m[36mPayment Load (0.2ms)[0m  [1m[34mSELECT "payments".* FROM "payments" WHERE "payments"."payer_id" = ? ORDER BY "payments"."created_at" DESC[0m  [["payer_id", 49]]
+  ↳ app/views/users/show.html.erb:28
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/payments/_payment.html.erb:4
+  Rendered payments/_payment.html.erb (1.7ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/payments/_payment.html.erb:4
+  Rendered payments/_payment.html.erb (0.8ms)
+  Rendered users/show.html.erb within layouts/application (16.8ms)
+  Rendered layouts/_nav.html.erb (1.4ms)
+Completed 200 OK in 59ms (Views: 54.8ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/users/49" for 127.0.0.1 at 2018-04-26 20:00:20 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"49"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 49], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:68
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 49], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" != ?[0m  [["id", 49]]
+  ↳ app/views/payments/_form.html.erb:20
+  Rendered payments/_form.html.erb (4.5ms)
+  [1m[36mPayment Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "payments" WHERE "payments"."payer_id" = ? LIMIT ?[0m  [["payer_id", 49], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:25
+  [1m[36mPayment Load (0.1ms)[0m  [1m[34mSELECT "payments".* FROM "payments" WHERE "payments"."payer_id" = ? ORDER BY "payments"."created_at" DESC[0m  [["payer_id", 49]]
+  ↳ app/views/users/show.html.erb:28
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/payments/_payment.html.erb:4
+  Rendered payments/_payment.html.erb (1.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/payments/_payment.html.erb:4
+  Rendered payments/_payment.html.erb (0.9ms)
+  Rendered users/show.html.erb within layouts/application (16.2ms)
+  Rendered layouts/_nav.html.erb (0.9ms)
+Completed 200 OK in 63ms (Views: 57.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-26 20:00:28 -0400
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mPayment Load (0.3ms)[0m  [1m[34mSELECT "payments".* FROM "payments"[0m
+  ↳ app/views/welcome/index.html.erb:19
+  [1m[36mPayment Load (0.3ms)[0m  [1m[34mSELECT "payments".* FROM "payments" ORDER BY "payments"."created_at" DESC[0m
+  ↳ app/views/welcome/index.html.erb:22
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 49], ["LIMIT", 1]]
+  ↳ app/views/payments/_payment.html.erb:4
+  Rendered payments/_payment.html.erb (1.7ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/payments/_payment.html.erb:4
+  Rendered payments/_payment.html.erb (1.2ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/payments/_payment.html.erb:4
+  Rendered payments/_payment.html.erb (1.1ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/payments/_payment.html.erb:4
+  Rendered payments/_payment.html.erb (0.7ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/payments/_payment.html.erb:4
+  Rendered payments/_payment.html.erb (0.8ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/payments/_payment.html.erb:4
+  Rendered payments/_payment.html.erb (0.8ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/payments/_payment.html.erb:4
+  Rendered payments/_payment.html.erb (0.9ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/payments/_payment.html.erb:4
+  Rendered payments/_payment.html.erb (0.8ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/payments/_payment.html.erb:4
+  Rendered payments/_payment.html.erb (0.7ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/payments/_payment.html.erb:4
+  Rendered payments/_payment.html.erb (1.0ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/payments/_payment.html.erb:4
+  Rendered payments/_payment.html.erb (0.6ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/payments/_payment.html.erb:4
+  Rendered payments/_payment.html.erb (0.6ms)
+  Rendered welcome/index.html.erb within layouts/application (40.7ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 49], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+  Rendered layouts/_nav.html.erb (1.1ms)
+Completed 200 OK in 79ms (Views: 73.0ms | ActiveRecord: 1.3ms)
+
+
+Started DELETE "/logout" for 127.0.0.1 at 2018-04-26 20:00:45 -0400
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"nkoTjhnOKvGUMkJyptvOhwIpGDIhmU1o1Z2/B8NPyFNjEEb3cwLYcZ8Myy6MfdX4UiTi516uUYW8S81LUL8A0w=="}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-26 20:00:45 -0400
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mPayment Load (0.2ms)[0m  [1m[34mSELECT "payments".* FROM "payments"[0m
+  ↳ app/views/welcome/index.html.erb:19
+  [1m[36mPayment Load (0.2ms)[0m  [1m[34mSELECT "payments".* FROM "payments" ORDER BY "payments"."created_at" DESC[0m
+  ↳ app/views/welcome/index.html.erb:22
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 49], ["LIMIT", 1]]
+  ↳ app/views/payments/_payment.html.erb:4
+  Rendered payments/_payment.html.erb (1.1ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/payments/_payment.html.erb:4
+  Rendered payments/_payment.html.erb (1.0ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/payments/_payment.html.erb:4
+  Rendered payments/_payment.html.erb (1.1ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/payments/_payment.html.erb:4
+  Rendered payments/_payment.html.erb (0.9ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/payments/_payment.html.erb:4
+  Rendered payments/_payment.html.erb (0.9ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/payments/_payment.html.erb:4
+  Rendered payments/_payment.html.erb (0.7ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/payments/_payment.html.erb:4
+  Rendered payments/_payment.html.erb (0.7ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/payments/_payment.html.erb:4
+  Rendered payments/_payment.html.erb (0.7ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/payments/_payment.html.erb:4
+  Rendered payments/_payment.html.erb (0.8ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/payments/_payment.html.erb:4
+  Rendered payments/_payment.html.erb (0.6ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/payments/_payment.html.erb:4
+  Rendered payments/_payment.html.erb (0.7ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/payments/_payment.html.erb:4
+  Rendered payments/_payment.html.erb (0.6ms)
+  Rendered welcome/index.html.erb within layouts/application (34.1ms)
+  Rendered layouts/_nav.html.erb (0.5ms)
+Completed 200 OK in 74ms (Views: 70.1ms | ActiveRecord: 1.0ms)
+
+
