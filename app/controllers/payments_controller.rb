@@ -1,5 +1,8 @@
+# frozen_string_literal: true
+
+# payments controller
 class PaymentsController < ApplicationController
-  before_action :set_status, only: [:edit, :update, :destroy]
+  before_action :set_status, only: %i[{edit update destroy}]
   before_action :authenticate_user
 
   def new
@@ -16,7 +19,7 @@ class PaymentsController < ApplicationController
     if @payment.save
       redirect_to @payment.payer
     else
-     redirect_to @payment.payer, flash: { error: "Insufficient Payment!"}
+      redirect_to @payment.payer, flash: { error: 'Insufficient Payment!' }
     end
   end
 
@@ -40,6 +43,8 @@ class PaymentsController < ApplicationController
   end
 
   def payment_params
-    params.require(:payment).permit(:text, :payment_amount, :reason_for_payment,:requester_id, :payer_id)
+    params.require(:payment).permit(:text, :payment_amount,
+                                    :reason_for_payment,
+                                    :requester_id, :payer_id)
   end
 end

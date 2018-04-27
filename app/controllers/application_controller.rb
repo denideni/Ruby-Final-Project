@@ -1,5 +1,8 @@
+# frozen_string_literal: true
+
+# app controller
 class ApplicationController < ActionController::Base
-	  protect_from_forgery with: :exception
+  protect_from_forgery with: :exception
 
   helper_method :logged_in?, :current_user, :authenticate_user
 
@@ -8,12 +11,9 @@ class ApplicationController < ActionController::Base
   end
 
   def current_user
-    begin
-        @current_user ||= User.find(session[:user_id]) if logged_in?    
-    rescue Exception => e
-      
-      reset_session
-    end
+    @current_user ||= User.find(session[:user_id]) if logged_in?
+  rescue Exception => e
+    reset_session
   end
 
   def authenticate_user
