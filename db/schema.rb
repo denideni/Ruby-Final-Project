@@ -24,7 +24,6 @@ ActiveRecord::Schema.define(version: 2018_04_15_080159) do
     t.index ['person_1_id'], name: 'index_friendships_on_person_1_id'
     t.index ['person_2_id'], name: 'index_friendships_on_person_2_id'
   end
-
   create_table 'payments', force: :cascade do |t|
     t.float 'payment_amount'
     t.integer 'requester_id'
@@ -36,7 +35,6 @@ ActiveRecord::Schema.define(version: 2018_04_15_080159) do
     t.index ['payer_id'], name: 'index_payments_on_payer_id'
     t.index ['requester_id'], name: 'index_payments_on_requester_id'
   end
-
   create_table 'users', force: :cascade do |t|
     t.string 'first_name'
     t.string 'last_name'

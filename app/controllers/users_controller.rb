@@ -1,9 +1,6 @@
-# frozen_string_literal: true
-
-# users controller
 class UsersController < ApplicationController
-  before_action :set_user, except: %i[{index new create friend_requests}]
-  before_action :authenticate_user, except: %i[{index new create}]
+ before_action :set_user, except: [:index, :new, :create, :friend_requests]
+  before_action :authenticate_user, except: [:index, :new, :create]
 
   def index
     @users = User.all
@@ -47,7 +44,8 @@ class UsersController < ApplicationController
     redirect_to root_path # user_path
   end
 
-  def friend_requests() end
+  def friend_requests
+  end
 
   def send_friend_request
     current_user.send_friend_request(@user)

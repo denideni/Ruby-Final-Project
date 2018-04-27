@@ -19,7 +19,6 @@ class User < ApplicationRecord
 
   def password=(new_password)
     @password = Password.create(new_password)
-    password_hash = @password
   end
 
   def selected_users
